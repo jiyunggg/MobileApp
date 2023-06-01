@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/home_ly"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TableRow
+                android:layout_height="15dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/Text1"
+                    android:layout_span="3"
+                    android:textSize="28dp"
+                    android:textColor="#44CB63"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:text="작물 카테고리" />
+            </TableRow>
+            <TableRow
+                android:layout_height="15dp">
+
+                <ImageButton
+                    android:id="@+id/one"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/one" />
+
+                <ImageButton
+                    android:id="@+id/two"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/two" />
+                <ImageButton
+                    android:id="@+id/three"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/three" />
+            </TableRow>
+            <TableRow
+                android:layout_height="15dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/TextRow1"
+                    android:layout_span="3"
+                    android:textSize="21dp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:text="         곡류                 콩류               구근류" />
+            </TableRow>
+            <TableRow
+                android:layout_height="15dp">
+                <ImageButton
+                    android:id="@+id/four"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/four" />
+                <ImageButton
+                    android:id="@+id/five"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/five" />
+                <ImageButton
+                    android:id="@+id/six"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/six" />
+            </TableRow>
+            <TableRow
+                android:layout_height="15dp">
+                <TextView
+                    android:layout_weight = "1"
+                    android:id="@+id/TextRow2"
+                    android:layout_span="3"
+                    android:textSize="21dp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:text="         채소               과실류             종실류" />
+            </TableRow>
+            <TableRow
+                android:layout_height="15dp">
+                <ImageButton
+                    android:id="@+id/seven"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/seven" />
+                <ImageButton
+                    android:id="@+id/eight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/eight" />
+                <ImageButton
+                    android:id="@+id/nine"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/nine" />
+            </TableRow>
+            <TableRow
+                android:layout_height="15dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/TextRow3"
+                    android:layout_span="3"
+                    android:textSize="21dp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:text="       버섯류           특용작물          화훼작물" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:itemRippleColor="@color/bottom_tab_selected_color"
+        app:menu="@menu/btm_navi_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
